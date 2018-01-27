@@ -44,7 +44,7 @@ public class TileManager : MonoBehaviour {
 			_floor[x] = new FloorTile[height];
 			for(int y = 0; y < height; y++)
 			{
-				_floor[x][y] = new FloorTile(x,y);
+				//_floor[x][y] = new FloorTile(x,y);
 			}
 		}
 
