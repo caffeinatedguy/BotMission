@@ -167,7 +167,7 @@ public class ScoreManager : MonoBehaviour
 			        }
 			    }
 
-			    this.StartCoroutine(this.WaitAndInvoke(2f, () => this.gameOverScreen.Show(string.Format("Team {0} wins!", bestTeam + 1))));
+			    //this.StartCoroutine(this.WaitAndInvoke(2f, () => this.gameOverScreen.Show(string.Format("Team {0} wins!", bestTeam + 1))));
 
                 //foreach(var player in Globals.Instance.Objective.Keys)
                 //{
@@ -272,6 +272,6 @@ public class ScoreManager : MonoBehaviour
     internal IEnumerator WaitAndInvoke(float delay, Action function)
     {
         yield return new WaitForSeconds(delay);
-        function();
+        //function();
     }
 }
