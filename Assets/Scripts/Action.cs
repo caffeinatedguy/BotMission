@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Action : MonoBehaviour {
 
-	private float _windup = 1.0f;
+	private float _windup = 0.5f;
 
 	public float Windup
 	{
 		get{
 			return _windup;
+		}
+		set{
+			_windup = value;
 		}
 	}
 

@@ -66,7 +66,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1711483631419478
 GameObject:
   m_ObjectHideFlags: 0
@@ -85,7 +85,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1818223134579224
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,8 +118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 0
-    m_Right: 0
-    m_Top: 0
+    m_Right: 4
+    m_Top: 4
     m_Bottom: 0
   m_ChildAlignment: 0
   m_Spacing: 10
@@ -188,7 +188,7 @@ MonoBehaviour:
   _moveBackwardAction: {fileID: 0}
   _rotateLeftAction: {fileID: 0}
   _rotateRightAction: {fileID: 0}
-  queueImage: {fileID: 0}
+  _pushAction: {fileID: 0}
   _playerId: 0
 --- !u!114 &114564865040498240
 MonoBehaviour:
@@ -230,12 +230,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
   contentPanel: {fileID: 224402964855754736}
-  _moveForwardAction: {fileID: 0}
-  _moveBackwardAction: {fileID: 0}
-  _rotateLeftAction: {fileID: 0}
-  _rotateRightAction: {fileID: 0}
-  queueImage: {fileID: 0}
-  _playerId: 0
+  _moveForwardAction: {fileID: 1309405937114012, guid: 6cf12d0409d5a4659ade602e17f73cdd,
+    type: 2}
+  _moveBackwardAction: {fileID: 1309405937114012, guid: 7f2a30d5bffd54e7eb5625b2c99c0bcd,
+    type: 2}
+  _rotateLeftAction: {fileID: 1309405937114012, guid: fdd06d4664a514f2d86e4575a750e003,
+    type: 2}
+  _rotateRightAction: {fileID: 1309405937114012, guid: 387b3c936c56549a18be2c3b0d5e4da8,
+    type: 2}
+  _pushAction: {fileID: 1309405937114012, guid: 2d641f5c7fcdb494f8c86e1367106be8,
+    type: 2}
+  _playerId: 2
 --- !u!114 &114607533548173004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -305,7 +310,8 @@ MonoBehaviour:
     type: 2}
   _rotateRightAction: {fileID: 1309405937114012, guid: 387b3c936c56549a18be2c3b0d5e4da8,
     type: 2}
-  queueImage: {fileID: 1309405937114012, guid: 6cf12d0409d5a4659ade602e17f73cdd, type: 2}
+  _pushAction: {fileID: 1309405937114012, guid: 2d641f5c7fcdb494f8c86e1367106be8,
+    type: 2}
   _playerId: 1
 --- !u!114 &114819141901334042
 MonoBehaviour:
@@ -340,7 +346,7 @@ MonoBehaviour:
   _moveBackwardAction: {fileID: 0}
   _rotateLeftAction: {fileID: 0}
   _rotateRightAction: {fileID: 0}
-  queueImage: {fileID: 0}
+  _pushAction: {fileID: 0}
   _playerId: 0
 --- !u!114 &114892623356204092
 MonoBehaviour:
