@@ -1,1 +1,5 @@
 Library/
+BotMission.csproj
+BotMission.Plugins.csproj
+BotMission.Editor.csproj
+Temp/
