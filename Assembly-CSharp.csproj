@@ -51,7 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Action.cs" />
+     <Compile Include="Assets\Scripts\ActionQueue.cs" />
      <Compile Include="Assets\Scripts\FloorTile.cs" />
+     <Compile Include="Assets\Scripts\MoveBackwardAction.cs" />
+     <Compile Include="Assets\Scripts\MoveForwardAction.cs" />
+     <Compile Include="Assets\Scripts\RotateLeftAction.cs" />
+     <Compile Include="Assets\Scripts\RotateRightAction.cs" />
      <Compile Include="Assets\Scripts\TileManager.cs" />
      <Compile Include="Assets\Scripts\TileMover.cs" />
      <Compile Include="Assets\voxel_scifi_free\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />

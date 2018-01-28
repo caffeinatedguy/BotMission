@@ -25,7 +25,7 @@ public class TileMover: MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.W))
+		/*if(Input.GetKeyDown(KeyCode.W))
 		{
 			MoveForward();
 		}
@@ -43,7 +43,7 @@ public class TileMover: MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.D))
 		{
 			Rotate(90f);
-		}
+		}*/
 
 		transform.position = Vector3.Lerp(transform.position, new Vector3(_target.gameObject.transform.position.x, transform.position.y, _target.gameObject.transform.position.z), 7f * Time.deltaTime);
 		transform.rotation = Quaternion.Slerp(transform.rotation, _targetRotation, 10f * Time.deltaTime);
