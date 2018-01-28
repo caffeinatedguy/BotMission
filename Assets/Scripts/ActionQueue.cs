@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ActionQueue : Events.EventHandler {
+public class ActionQueue : MonoBehaviour {
 
 
 	private List<GameObject> _queue = new List<GameObject>();
@@ -68,21 +68,7 @@ public class ActionQueue : Events.EventHandler {
 		_takingAction = false;
 	}
 
-	public override void SubscribeEvents()
-	{
-		Debug.Log(string.Format("HeaderText.SubscribeEvents() name {0}", name));
-
-		SDD.Events.EventManager.Instance.AddListener<TileMoverEvent>(OnTileMoverEvent);
-	}
-
-	public override void UnsubscribeEvents()
-	{
-		Debug.Log(string.Format("HeaderText.UnsubscribeEvents() name {0}", name));
-
-		SDD.Events.EventManager.Instance.RemoveListener<TileMoverEvent>(OnTileMoverEvent);
-	}
-
-	public void OnTileMoverEvent(TileMoverEvent e)
+	public void AddTileMoverEvent(TileMoverEvent e)
 	{
 		//Check if this player is the right player otherwise return
 		if ((_playerId != e._playerId) || _queue.Count >= _maxQueueSize)

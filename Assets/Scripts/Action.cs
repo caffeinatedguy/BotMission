@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Action : MonoBehaviour {
 
+    [SerializeField]
 	private float _windup = 0.5f;
 
 	public float Windup
