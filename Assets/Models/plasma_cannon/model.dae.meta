@@ -1,0 +1,591 @@
+fileFormatVersion: 2
+guid: 964eddf9b0d10364ba624aa6659c6479
+timeCreated: 1517115304
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Component_1
+    100002: Component_3
+    100004: Component_4
+    100006: Component_4 1
+    100008: Component_4 2
+    100010: Component_4 3
+    100012: Component_4 4
+    100014: Component_4 5
+    100016: Component_5
+    100018: Component_6
+    100020: DART_CSD__Dragonfly__Attack_Drone
+    100022: group_0
+    100024: ID104
+    100026: ID104 1
+    100028: ID104 2
+    100030: ID104 3
+    100032: ID104 4
+    100034: ID104 5
+    100036: ID110
+    100038: ID110 1
+    100040: ID110 2
+    100042: ID110 3
+    100044: ID110 4
+    100046: ID110 5
+    100048: ID116
+    100050: ID116 1
+    100052: ID116 2
+    100054: ID116 3
+    100056: ID116 4
+    100058: ID116 5
+    100060: ID122
+    100062: ID122 1
+    100064: ID122 2
+    100066: ID122 3
+    100068: ID122 4
+    100070: ID122 5
+    100072: ID128
+    100074: ID128 1
+    100076: ID128 2
+    100078: ID128 3
+    100080: ID128 4
+    100082: ID128 5
+    100084: ID134
+    100086: ID134 1
+    100088: ID134 2
+    100090: ID134 3
+    100092: ID134 4
+    100094: ID134 5
+    100096: ID140
+    100098: ID140 1
+    100100: ID140 2
+    100102: ID140 3
+    100104: ID140 4
+    100106: ID140 5
+    100108: ID15
+    100110: ID167
+    100112: ID175
+    100114: ID181
+    100116: ID187
+    100118: ID193
+    100120: ID199
+    100122: ID205
+    100124: ID21
+    100126: ID211
+    100128: ID217
+    100130: ID223
+    100132: ID229
+    100134: ID235
+    100136: ID241
+    100138: ID247
+    100140: ID253
+    100142: ID259
+    100144: ID265
+    100146: ID271
+    100148: ID277
+    100150: ID283
+    100152: ID289
+    100154: ID295
+    100156: ID301
+    100158: ID307
+    100160: ID313
+    100162: ID319
+    100164: ID325
+    100166: ID331
+    100168: ID337
+    100170: ID343
+    100172: ID349
+    100174: ID35
+    100176: ID355
+    100178: ID361
+    100180: ID369
+    100182: ID375
+    100184: ID41
+    100186: ID49
+    100188: ID57
+    100190: ID65
+    100192: ID73
+    100194: ID98
+    100196: ID98 1
+    100198: ID98 2
+    100200: ID98 3
+    100202: ID98 4
+    100204: ID98 5
+    100206: instance_0
+    100208: instance_1
+    100210: instance_10
+    100212: instance_2
+    100214: instance_3
+    100216: instance_4
+    100218: instance_5
+    100220: instance_6
+    100222: instance_7
+    100224: instance_8
+    100226: instance_9
+    100228: //RootNode
+    100230: skp_camera_Last_Saved_SketchUp_View
+    400000: Component_1
+    400002: Component_3
+    400004: Component_4
+    400006: Component_4 1
+    400008: Component_4 2
+    400010: Component_4 3
+    400012: Component_4 4
+    400014: Component_4 5
+    400016: Component_5
+    400018: Component_6
+    400020: DART_CSD__Dragonfly__Attack_Drone
+    400022: group_0
+    400024: ID104
+    400026: ID104 1
+    400028: ID104 2
+    400030: ID104 3
+    400032: ID104 4
+    400034: ID104 5
+    400036: ID110
+    400038: ID110 1
+    400040: ID110 2
+    400042: ID110 3
+    400044: ID110 4
+    400046: ID110 5
+    400048: ID116
+    400050: ID116 1
+    400052: ID116 2
+    400054: ID116 3
+    400056: ID116 4
+    400058: ID116 5
+    400060: ID122
+    400062: ID122 1
+    400064: ID122 2
+    400066: ID122 3
+    400068: ID122 4
+    400070: ID122 5
+    400072: ID128
+    400074: ID128 1
+    400076: ID128 2
+    400078: ID128 3
+    400080: ID128 4
+    400082: ID128 5
+    400084: ID134
+    400086: ID134 1
+    400088: ID134 2
+    400090: ID134 3
+    400092: ID134 4
+    400094: ID134 5
+    400096: ID140
+    400098: ID140 1
+    400100: ID140 2
+    400102: ID140 3
+    400104: ID140 4
+    400106: ID140 5
+    400108: ID15
+    400110: ID167
+    400112: ID175
+    400114: ID181
+    400116: ID187
+    400118: ID193
+    400120: ID199
+    400122: ID205
+    400124: ID21
+    400126: ID211
+    400128: ID217
+    400130: ID223
+    400132: ID229
+    400134: ID235
+    400136: ID241
+    400138: ID247
+    400140: ID253
+    400142: ID259
+    400144: ID265
+    400146: ID271
+    400148: ID277
+    400150: ID283
+    400152: ID289
+    400154: ID295
+    400156: ID301
+    400158: ID307
+    400160: ID313
+    400162: ID319
+    400164: ID325
+    400166: ID331
+    400168: ID337
+    400170: ID343
+    400172: ID349
+    400174: ID35
+    400176: ID355
+    400178: ID361
+    400180: ID369
+    400182: ID375
+    400184: ID41
+    400186: ID49
+    400188: ID57
+    400190: ID65
+    400192: ID73
+    400194: ID98
+    400196: ID98 1
+    400198: ID98 2
+    400200: ID98 3
+    400202: ID98 4
+    400204: ID98 5
+    400206: instance_0
+    400208: instance_1
+    400210: instance_10
+    400212: instance_2
+    400214: instance_3
+    400216: instance_4
+    400218: instance_5
+    400220: instance_6
+    400222: instance_7
+    400224: instance_8
+    400226: instance_9
+    400228: //RootNode
+    400230: skp_camera_Last_Saved_SketchUp_View
+    2000000: skp_camera_Last_Saved_SketchUp_View
+    2100000: material
+    2100002: Color_006
+    2100004: Color_004
+    2100006: Color_003
+    2100008: Color_A01
+    2100010: Color_A06
+    2100012: Color_008
+    2100014: Color_007
+    2100016: Color_005
+    2300000: Component_1
+    2300002: Component_3
+    2300004: Component_4
+    2300006: Component_4 1
+    2300008: Component_4 2
+    2300010: Component_4 3
+    2300012: Component_4 4
+    2300014: Component_4 5
+    2300016: Component_5
+    2300018: Component_6
+    2300020: group_0
+    2300022: ID104
+    2300024: ID104 1
+    2300026: ID104 2
+    2300028: ID104 3
+    2300030: ID104 4
+    2300032: ID104 5
+    2300034: ID110
+    2300036: ID110 1
+    2300038: ID110 2
+    2300040: ID110 3
+    2300042: ID110 4
+    2300044: ID110 5
+    2300046: ID116
+    2300048: ID116 1
+    2300050: ID116 2
+    2300052: ID116 3
+    2300054: ID116 4
+    2300056: ID116 5
+    2300058: ID122
+    2300060: ID122 1
+    2300062: ID122 2
+    2300064: ID122 3
+    2300066: ID122 4
+    2300068: ID122 5
+    2300070: ID128
+    2300072: ID128 1
+    2300074: ID128 2
+    2300076: ID128 3
+    2300078: ID128 4
+    2300080: ID128 5
+    2300082: ID134
+    2300084: ID134 1
+    2300086: ID134 2
+    2300088: ID134 3
+    2300090: ID134 4
+    2300092: ID134 5
+    2300094: ID140
+    2300096: ID140 1
+    2300098: ID140 2
+    2300100: ID140 3
+    2300102: ID140 4
+    2300104: ID140 5
+    2300106: ID15
+    2300108: ID167
+    2300110: ID175
+    2300112: ID181
+    2300114: ID187
+    2300116: ID193
+    2300118: ID199
+    2300120: ID205
+    2300122: ID21
+    2300124: ID211
+    2300126: ID217
+    2300128: ID223
+    2300130: ID229
+    2300132: ID235
+    2300134: ID241
+    2300136: ID247
+    2300138: ID253
+    2300140: ID259
+    2300142: ID265
+    2300144: ID271
+    2300146: ID277
+    2300148: ID283
+    2300150: ID289
+    2300152: ID295
+    2300154: ID301
+    2300156: ID307
+    2300158: ID313
+    2300160: ID319
+    2300162: ID325
+    2300164: ID331
+    2300166: ID337
+    2300168: ID343
+    2300170: ID349
+    2300172: ID35
+    2300174: ID355
+    2300176: ID361
+    2300178: ID369
+    2300180: ID375
+    2300182: ID41
+    2300184: ID49
+    2300186: ID57
+    2300188: ID65
+    2300190: ID73
+    2300192: ID98
+    2300194: ID98 1
+    2300196: ID98 2
+    2300198: ID98 3
+    2300200: ID98 4
+    2300202: ID98 5
+    3300000: Component_1
+    3300002: Component_3
+    3300004: Component_4
+    3300006: Component_4 1
+    3300008: Component_4 2
+    3300010: Component_4 3
+    3300012: Component_4 4
+    3300014: Component_4 5
+    3300016: Component_5
+    3300018: Component_6
+    3300020: group_0
+    3300022: ID104
+    3300024: ID104 1
+    3300026: ID104 2
+    3300028: ID104 3
+    3300030: ID104 4
+    3300032: ID104 5
+    3300034: ID110
+    3300036: ID110 1
+    3300038: ID110 2
+    3300040: ID110 3
+    3300042: ID110 4
+    3300044: ID110 5
+    3300046: ID116
+    3300048: ID116 1
+    3300050: ID116 2
+    3300052: ID116 3
+    3300054: ID116 4
+    3300056: ID116 5
+    3300058: ID122
+    3300060: ID122 1
+    3300062: ID122 2
+    3300064: ID122 3
+    3300066: ID122 4
+    3300068: ID122 5
+    3300070: ID128
+    3300072: ID128 1
+    3300074: ID128 2
+    3300076: ID128 3
+    3300078: ID128 4
+    3300080: ID128 5
+    3300082: ID134
+    3300084: ID134 1
+    3300086: ID134 2
+    3300088: ID134 3
+    3300090: ID134 4
+    3300092: ID134 5
+    3300094: ID140
+    3300096: ID140 1
+    3300098: ID140 2
+    3300100: ID140 3
+    3300102: ID140 4
+    3300104: ID140 5
+    3300106: ID15
+    3300108: ID167
+    3300110: ID175
+    3300112: ID181
+    3300114: ID187
+    3300116: ID193
+    3300118: ID199
+    3300120: ID205
+    3300122: ID21
+    3300124: ID211
+    3300126: ID217
+    3300128: ID223
+    3300130: ID229
+    3300132: ID235
+    3300134: ID241
+    3300136: ID247
+    3300138: ID253
+    3300140: ID259
+    3300142: ID265
+    3300144: ID271
+    3300146: ID277
+    3300148: ID283
+    3300150: ID289
+    3300152: ID295
+    3300154: ID301
+    3300156: ID307
+    3300158: ID313
+    3300160: ID319
+    3300162: ID325
+    3300164: ID331
+    3300166: ID337
+    3300168: ID343
+    3300170: ID349
+    3300172: ID35
+    3300174: ID355
+    3300176: ID361
+    3300178: ID369
+    3300180: ID375
+    3300182: ID41
+    3300184: ID49
+    3300186: ID57
+    3300188: ID65
+    3300190: ID73
+    3300192: ID98
+    3300194: ID98 1
+    3300196: ID98 2
+    3300198: ID98 3
+    3300200: ID98 4
+    3300202: ID98 5
+    4300000: Component_3
+    4300002: ID15
+    4300004: ID21
+    4300006: Component_1
+    4300008: ID35
+    4300010: ID41
+    4300012: ID49
+    4300014: ID57
+    4300016: ID65
+    4300018: ID73
+    4300020: Component_5
+    4300022: group_0
+    4300024: Component_4
+    4300026: ID98
+    4300028: ID104
+    4300030: ID110
+    4300032: ID116
+    4300034: ID122
+    4300036: ID128
+    4300038: ID134
+    4300040: ID140
+    4300042: Component_6
+    4300044: ID167
+    4300046: ID175
+    4300048: ID181
+    4300050: ID187
+    4300052: ID193
+    4300054: ID199
+    4300056: ID205
+    4300058: ID211
+    4300060: ID217
+    4300062: ID223
+    4300064: ID229
+    4300066: ID235
+    4300068: ID241
+    4300070: ID247
+    4300072: ID253
+    4300074: ID259
+    4300076: ID265
+    4300078: ID271
+    4300080: ID277
+    4300082: ID283
+    4300084: ID289
+    4300086: ID295
+    4300088: ID301
+    4300090: ID307
+    4300092: ID313
+    4300094: ID319
+    4300096: ID325
+    4300098: ID331
+    4300100: ID337
+    4300102: ID343
+    4300104: ID349
+    4300106: ID355
+    4300108: ID361
+    4300110: ID369
+    4300112: ID375
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.05
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
