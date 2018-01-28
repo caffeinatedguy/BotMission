@@ -51,7 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BallSpawner.cs" />
      <Compile Include="Assets\EventManager\Source\Event.cs" />
      <Compile Include="Assets\EventManager\Source\EventManager.cs" />
      <Compile Include="Assets\EventManager\Source\IEventHandler.cs" />
@@ -87,11 +86,13 @@
      <Compile Include="Assets\GGSheep\Scripts\TrackingCamera.cs" />
      <Compile Include="Assets\Scripts\Action.cs" />
      <Compile Include="Assets\Scripts\ActionQueue.cs" />
+     <Compile Include="Assets\Scripts\BallSpawner.cs" />
      <Compile Include="Assets\Scripts\ConveyorTile.cs" />
      <Compile Include="Assets\Scripts\EventHandler.cs" />
      <Compile Include="Assets\Scripts\FloorTile.cs" />
      <Compile Include="Assets\Scripts\MoveBackwardAction.cs" />
      <Compile Include="Assets\Scripts\MoveForwardAction.cs" />
+     <Compile Include="Assets\Scripts\PrimingQueue.cs" />
      <Compile Include="Assets\Scripts\PushAction.cs" />
      <Compile Include="Assets\Scripts\RotateLeftAction.cs" />
      <Compile Include="Assets\Scripts\RotateRightAction.cs" />
