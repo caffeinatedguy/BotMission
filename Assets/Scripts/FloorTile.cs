@@ -36,7 +36,6 @@ public class FloorTile : MonoBehaviour {
 
 	public FloorTile GetTile(Vector3 direction)
 	{
-		Debug.Log("Casting in direction " + direction);
 		RaycastHit info;
 
 		if(Physics.Raycast(transform.position + new Vector3(0f,0.2f,0f), direction, out info, 2.0f)){
