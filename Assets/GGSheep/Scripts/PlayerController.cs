@@ -155,7 +155,7 @@ public class PlayerController : MonoBehaviour
 			movingBack = false;
 		
 		bool wasMoving= isMoving;
-		isMoving = Mathf.Abs (h) > 0.1f || Mathf.Abs (v) > 0.1f;
+		isMoving = Mathf.Abs (h) > 0.5f || Mathf.Abs (v) > 0.5f;
 
 
         //Check horizontal direction
