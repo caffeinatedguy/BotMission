@@ -1,6 +1,24 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/sumScore/Scripts/SumScore.cs">
+    <Files>
+      <File FileName="Assets/Scripts/FloorTile.cs" Line="39" Column="1" />
+      <File FileName="Assets/Scripts/TileMover.cs" Line="91" Column="4" />
+      <File FileName="Assets/Scripts/Action.cs" Line="7" Column="31" />
+      <File FileName="Assets/Scripts/ActionQueue.cs" Line="91" Column="1" />
+      <File FileName="Assets/GGSheep/Scripts/PlayerController.cs" Line="200" Column="10" />
+      <File FileName="Assets/GGSheep/Scripts/TeamManager2.cs" Line="1" Column="1" />
+      <File FileName="Assets/GGSheep/Scripts/PlayerId.cs" Line="7" Column="9" />
+      <File FileName="Assets/Scripts/ConveyorTile.cs" Line="14" Column="37" />
+      <File FileName="Assets/Scripts/PushAction.cs" Line="13" Column="23" />
+      <File FileName="Assets/Scripts/MoveForwardAction.cs" Line="15" Column="1" />
+      <File FileName="Assets/Scripts/TriggerScore.cs" Line="16" Column="4" />
+      <File FileName="Assets/Scripts/TileMoverEvent.cs" Line="18" Column="1" />
+      <File FileName="Assets/Scripts/ScoreEvent.cs" Line="14" Column="9" />
+      <File FileName="Assets/Scripts/ScoreHandler.cs" Line="11" Column="1" />
+      <File FileName="Assets/sumScore/Scripts/SumScore.cs" Line="19" Column="19" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

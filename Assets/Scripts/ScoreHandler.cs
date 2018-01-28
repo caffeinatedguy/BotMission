@@ -31,5 +31,8 @@ public class ScoreHandler : Events.EventHandler {
 
 		Debug.Log("Text is " + _text.text + " As a number " + int.Parse(_text.text));
 		_text.text = (int.Parse(_text.text) + s._amount).ToString();
+
 	}
+
+
 }

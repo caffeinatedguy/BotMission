@@ -32,7 +32,8 @@ public class BallSpawner : Events.EventHandler {
 	{
 		yield return new WaitForSeconds(time);
 
-		GameObject temp = (GameObject)GameObject.Instantiate(_spawn);
+		//GameObject temp = (GameObject)GameObject.Instantiate(_spawn);
+		GameObject temp = ObjectPool.instance.GetObjectOfType("Soccer Ball", false);
 		temp.transform.position = transform.position;
 		temp.GetComponent<Rigidbody>().AddForce((_spawnHeading.position - transform.position).normalized * Random.Range(_spawnForce * 0.75f, _spawnForce * 1.25f));
 		_spawning = false;

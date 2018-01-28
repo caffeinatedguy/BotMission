@@ -16,7 +16,12 @@ public class TriggerScore : MonoBehaviour
 			SDD.Events.EventManager.Instance.Raise(new ScoreEvent(_playerID, _amount));
 		}
 
-
-        //Send Events Here for score
+		StartCoroutine(PoolObjectAfterTime(other.gameObject, 1.0f));
     }
+
+	IEnumerator PoolObjectAfterTime(GameObject obj, float time)
+	{
+		yield return new WaitForSeconds(time);
+		ObjectPool.instance.PoolObject(obj);
+	}
 }

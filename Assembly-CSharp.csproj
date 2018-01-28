@@ -90,8 +90,10 @@
      <Compile Include="Assets\Scripts\ConveyorTile.cs" />
      <Compile Include="Assets\Scripts\EventHandler.cs" />
      <Compile Include="Assets\Scripts\FloorTile.cs" />
+     <Compile Include="Assets\Scripts\KickForce.cs" />
      <Compile Include="Assets\Scripts\MoveBackwardAction.cs" />
      <Compile Include="Assets\Scripts\MoveForwardAction.cs" />
+     <Compile Include="Assets\Scripts\ObjectPool.cs" />
      <Compile Include="Assets\Scripts\PrimingQueue.cs" />
      <Compile Include="Assets\Scripts\PushAction.cs" />
      <Compile Include="Assets\Scripts\RotateLeftAction.cs" />
