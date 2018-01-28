@@ -21,19 +21,7 @@ public class Action : MonoBehaviour {
 			return _cooldown;
 		}
 	}
-
-	[SerializeField]
-	private Sprite _image;
-
-	public Sprite Image
-	{
-		get {
-			return _image;
-		}
-	}
-
-	public GameObject uiImage;
-
+		
 	public virtual void Activate(TileMover player)
 	{
 		

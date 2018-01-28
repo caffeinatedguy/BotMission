@@ -184,9 +184,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
   contentPanel: {fileID: 224692163252086440}
-  moveForwardAction: {fileID: 114981624838045988, guid: e922716f71ab14c46a740e2de8f38947,
-    type: 2}
+  _moveForwardAction: {fileID: 0}
+  _moveBackwardAction: {fileID: 0}
+  _rotateLeftAction: {fileID: 0}
+  _rotateRightAction: {fileID: 0}
   queueImage: {fileID: 0}
+  _playerId: 0
 --- !u!114 &114564865040498240
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -227,9 +230,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
   contentPanel: {fileID: 224402964855754736}
-  moveForwardAction: {fileID: 114981624838045988, guid: e922716f71ab14c46a740e2de8f38947,
-    type: 2}
+  _moveForwardAction: {fileID: 0}
+  _moveBackwardAction: {fileID: 0}
+  _rotateLeftAction: {fileID: 0}
+  _rotateRightAction: {fileID: 0}
   queueImage: {fileID: 0}
+  _playerId: 0
 --- !u!114 &114607533548173004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -291,9 +297,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
   contentPanel: {fileID: 224516817249704358}
-  moveForwardAction: {fileID: 114981624838045988, guid: e922716f71ab14c46a740e2de8f38947,
+  _moveForwardAction: {fileID: 1309405937114012, guid: 6cf12d0409d5a4659ade602e17f73cdd,
+    type: 2}
+  _moveBackwardAction: {fileID: 1309405937114012, guid: 7f2a30d5bffd54e7eb5625b2c99c0bcd,
+    type: 2}
+  _rotateLeftAction: {fileID: 1309405937114012, guid: fdd06d4664a514f2d86e4575a750e003,
+    type: 2}
+  _rotateRightAction: {fileID: 1309405937114012, guid: 387b3c936c56549a18be2c3b0d5e4da8,
     type: 2}
   queueImage: {fileID: 1309405937114012, guid: 6cf12d0409d5a4659ade602e17f73cdd, type: 2}
+  _playerId: 1
 --- !u!114 &114819141901334042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -323,9 +336,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
   contentPanel: {fileID: 224054716901139704}
-  moveForwardAction: {fileID: 114981624838045988, guid: e922716f71ab14c46a740e2de8f38947,
-    type: 2}
+  _moveForwardAction: {fileID: 0}
+  _moveBackwardAction: {fileID: 0}
+  _rotateLeftAction: {fileID: 0}
+  _rotateRightAction: {fileID: 0}
   queueImage: {fileID: 0}
+  _playerId: 0
 --- !u!114 &114892623356204092
 MonoBehaviour:
   m_ObjectHideFlags: 1

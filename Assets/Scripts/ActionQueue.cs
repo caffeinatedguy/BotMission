@@ -3,22 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ActionQueue : MonoBehaviour {
+public class ActionQueue : Events.EventHandler {
 
-	private List<Action> _queue = new List<Action>();
+	private List<GameObject> _queue = new List<GameObject>();
 	private bool _takingAction = false; 
 
 	public TileMover _player;
 
 	public Transform contentPanel;
 
-	public Action moveForwardAction;
+	[SerializeField]
+	private GameObject _moveForwardAction;
+	[SerializeField]
+	private GameObject _moveBackwardAction;
+	[SerializeField]
+	private GameObject _rotateLeftAction;
+	[SerializeField]
+	private GameObject _rotateRightAction;
 
 	public GameObject queueImage;
 
 	private int _maxQueueSize = 6;
 
-	// Use this for initialization
+	[SerializeField]
+	private PlayerId _playerId;
+
 	void Start () {
 		
 	}
@@ -26,44 +35,71 @@ public class ActionQueue : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if(Input.GetKeyDown(KeyCode.W))
-		{
-			Debug.Log("Adding move forward to queue");
-			AddToQueue(moveForwardAction);
-		}
-
 		if(_queue.Count > 0 && !_takingAction)
 		{
-			Debug.Log("Starting coro");
 			_takingAction = true;
-			StartCoroutine(TakeActionAfterTime(_queue[0],_queue[0].Windup));
+			StartCoroutine(TakeActionAfterTime(_queue[0]));
 			_queue.RemoveAt(0);
 		}
 	}
 
-	public void AddToQueue(Action action)
+	public void AddToQueue(GameObject action)
 	{
-		if(_queue.Count > _maxQueueSize)
-		{
-			return;
-		}
-		GameObject newIcon = (GameObject)GameObject.Instantiate(queueImage);
-		Image image = newIcon.GetComponent<Image>();
-		image.sprite = action.Image;
-		newIcon.transform.SetParent(contentPanel);
-		action.uiImage = newIcon;
+
+		action.transform.SetParent(contentPanel);
+
 		_queue.Add(action);
 	}
 
-	IEnumerator TakeActionAfterTime(Action action, float time)
+	IEnumerator TakeActionAfterTime(GameObject o)
 	{
-		Debug.Log("Added Action to Queue");
+					
+		Action action = o.GetComponent<Action>();
+		yield return new WaitForSeconds(action.Windup);
 
-		yield return new WaitForSeconds(time);
-		Debug.Log("Taking Action");
 		action.Activate(_player);
-		Destroy(action.uiImage);
+		Destroy(o);
 		_takingAction = false;
+	}
+
+	public override void SubscribeEvents()
+	{
+		Debug.Log(string.Format("HeaderText.SubscribeEvents() name {0}", name));
+
+		SDD.Events.EventManager.Instance.AddListener<TileMoverEvent>(OnTileMoverEvent);
+	}
+
+	public override void UnsubscribeEvents()
+	{
+		Debug.Log(string.Format("HeaderText.UnsubscribeEvents() name {0}", name));
+
+		SDD.Events.EventManager.Instance.RemoveListener<TileMoverEvent>(OnTileMoverEvent);
+	}
+
+	public void OnTileMoverEvent(TileMoverEvent e)
+	{
+		//Check if this player is the right player otherwise return
+		if ((_playerId != e._playerId) || _queue.Count >= _maxQueueSize)
+			return;
+
+		Debug.Log(string.Format("HeaderText.OnClick({0})", e));
+
+		switch (e._eventType)
+		{
+			case TileMoverEventTypes.Forward:
+				AddToQueue((GameObject)GameObject.Instantiate(_moveForwardAction));
+				break;
+			case TileMoverEventTypes.Backward:
+				AddToQueue((GameObject)GameObject.Instantiate(_moveBackwardAction));
+				break;
+			case TileMoverEventTypes.TurnLeft:
+				AddToQueue((GameObject)GameObject.Instantiate(_rotateLeftAction));
+				break;
+			case TileMoverEventTypes.TurnRight:
+				AddToQueue((GameObject)GameObject.Instantiate(_rotateRightAction));
+				break;
+		}
+
 	}
 		
 }

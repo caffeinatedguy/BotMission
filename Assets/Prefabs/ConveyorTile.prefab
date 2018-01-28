@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65229100455885428}
   - component: {fileID: 114353804117504686}
   m_Layer: 0
-  m_Name: Tile
+  m_Name: ConveyorTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
