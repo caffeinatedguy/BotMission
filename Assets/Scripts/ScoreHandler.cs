@@ -33,7 +33,7 @@ public class ScoreHandler : Events.EventHandler {
 
 		_text.text = (int.Parse(_text.text) + s._amount).ToString();
 
-		if(int.Parse(_text.text) >= 1)
+		if(int.Parse(_text.text) >= 10)
 		{
 			_winnerPanel.SetActive(true);
 			if(_playerId.ToString() == "GP1" || _playerId.ToString() == "Wasd")
