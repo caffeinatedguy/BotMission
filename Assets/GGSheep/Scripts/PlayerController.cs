@@ -135,9 +135,9 @@ public class PlayerController : MonoBehaviour
 	{
 		Transform cameraTransform= Camera.main.transform;
 		bool grounded= IsGrounded();
-		
-		// Forward vector relative to the camera along the x-z plane	
-		Vector3 forward= cameraTransform.TransformDirection(Vector3.forward);
+
+        // Forward vector relative to the camera along the x-z plane	
+        Vector3 forward = Vector3.forward;// cameraTransform.TransformDirection(Vector3.forward);
 		forward.y = 0;
 		forward = forward.normalized;
 		
@@ -171,8 +171,25 @@ public class PlayerController : MonoBehaviour
 
             TileMoverEventTypes eventType = TileMoverEventTypes.None;
 
+            if (v > 0.5f)
+            {
+                eventType = TileMoverEventTypes.Forward;
+            }
+            else if (v < -0.5f)
+            {
+                eventType = TileMoverEventTypes.Backward;
+            }
+            else if (h > 0.5f)
+            {
+                eventType = TileMoverEventTypes.TurnRight;
+            }
+            else if (h < 0.5f)
+            {
+                eventType = TileMoverEventTypes.TurnLeft;
+            }
+
             //Check for forward
-            if (absAngle < forwardBackwardAngle)
+            /*if (absAngle < forwardBackwardAngle)
             {
                 eventType = TileMoverEventTypes.Forward;
             }
@@ -187,7 +204,7 @@ public class PlayerController : MonoBehaviour
             else if(angle < 0.0f)
             {
                 eventType = TileMoverEventTypes.TurnLeft;
-            }
+            }*/
 
             if (lastType != eventType)
             {
