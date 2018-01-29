@@ -8,7 +8,6 @@ public class TileRaiser : MonoBehaviour {
 	{
 		if(other.tag == "Tile")
 		{
-			Debug.Log("Found tile to raise");
 			other.gameObject.GetComponent<FloorTile>().RaiseTile();
 		}
 	}
