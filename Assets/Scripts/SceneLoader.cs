@@ -19,7 +19,19 @@ public class SceneLoader : MonoBehaviour {
 
 	}
 
-	public void LoadMenu()
+    public void TurnOnGO(GameObject obj, GameObject obj2)
+    {
+        obj.active = true;
+        obj2.active = false;
+    }
+
+    public void TurnOffGO(GameObject obj, GameObject obj2)
+    {
+        obj.active = false;
+        obj2.active = true;
+    }
+
+    public void LoadMenu()
 	{
 		Time.timeScale = 1f;
 

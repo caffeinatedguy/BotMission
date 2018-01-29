@@ -210,7 +210,7 @@ public class PlayerController : MonoBehaviour
             {
                 lastType = eventType;
 
-                Debug.Log(eventType.ToString() + " Angle=" + angle.ToString() + " h=" + h.ToString() + " v=" + v.ToString());
+               // Debug.Log(eventType.ToString() + " Angle=" + angle.ToString() + " h=" + h.ToString() + " v=" + v.ToString());
 
                 SDD.Events.EventManager.Instance.Raise(new TileMoverEvent(_player.playerId, eventType));
             }
