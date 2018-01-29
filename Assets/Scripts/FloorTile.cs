@@ -50,8 +50,11 @@ public class FloorTile : MonoBehaviour {
 		if(_risingTile)
 		{
 			transform.position = _loweredPosition;
-		}
-	}
+            Color color = _meshRenderer.material.color;
+            color.a = 0.0f;
+            _meshRenderer.material.color = color;
+        }
+    }
 
 	void Update()
 	{
