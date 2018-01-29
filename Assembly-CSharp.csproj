@@ -106,6 +106,7 @@
      <Compile Include="Assets\Scripts\TileMoverEvent.cs" />
      <Compile Include="Assets\Scripts\Trigger.cs" />
      <Compile Include="Assets\Scripts\TriggerScore.cs" />
+     <Compile Include="Assets\StayBetween.cs" />
      <Compile Include="Assets\sumScore\Example\SumScoreExample.cs" />
      <Compile Include="Assets\sumScore\Scripts\SumScore.cs" />
      <Compile Include="Assets\sumScore\Scripts\SumScoreManager.cs" />

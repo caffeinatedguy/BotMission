@@ -5,10 +5,10 @@ namespace UnityStandardAssets.Utility
 	public class SmoothFollow : MonoBehaviour
 	{
 
-		// The target we are following
 		[SerializeField]
 		private Transform target;
-		// The distance in the x-z plane to the target
+		// The target we are following
+
 		[SerializeField]
 		private float distance = 10.0f;
 		// the height we want the camera to be above the target
@@ -30,9 +30,10 @@ namespace UnityStandardAssets.Utility
 			if (!target)
 				return;
 
+
 			// Calculate the current rotation angles
-			var wantedRotationAngle = target.eulerAngles.y;
-			var wantedHeight = target.position.y + height;
+			var wantedRotationAngle = target.position.y;
+			var wantedHeight = target.eulerAngles.y + height;
 
 			var currentRotationAngle = transform.eulerAngles.y;
 			var currentHeight = transform.position.y;

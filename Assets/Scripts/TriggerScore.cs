@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TriggerScore : MonoBehaviour
 {
@@ -8,6 +10,7 @@ public class TriggerScore : MonoBehaviour
 	public PlayerId _playerID;
 	public int _amount;
 	public bool _winOnEnter;
+	public GameObject _winPanel;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -19,7 +22,7 @@ public class TriggerScore : MonoBehaviour
 
 		if(_winOnEnter && other.tag == "Player")
 		{
-			
+			SceneManager.LoadScene("MainMenu");
 		}
 
 		StartCoroutine(PoolObjectAfterTime(other.gameObject, 1.0f));
