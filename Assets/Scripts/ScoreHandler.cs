@@ -8,6 +8,9 @@ public class ScoreHandler : Events.EventHandler {
 	public Text _text;
 	public PlayerId _playerId;
 
+	public GameObject _winnerPanel;
+	public Text _winnerText;
+
 	public override void SubscribeEvents()
 	{
 		Debug.Log(string.Format("HeaderText.SubscribeEvents() name {0}", name));
@@ -24,13 +27,23 @@ public class ScoreHandler : Events.EventHandler {
 
 	public void OnScoreEvent(ScoreEvent s)
 	{
-		Debug.Log("Received Score Event");
 		//Check if this player is the right player otherwise return
 		if (_playerId != s._playerId)
 			return;
 
-		Debug.Log("Text is " + _text.text + " As a number " + int.Parse(_text.text));
 		_text.text = (int.Parse(_text.text) + s._amount).ToString();
+
+		if(int.Parse(_text.text) >= 1)
+		{
+			_winnerPanel.SetActive(true);
+			if(_playerId.ToString() == "GP1" || _playerId.ToString() == "Wasd")
+			{
+				_winnerText.text = "Player 1 Wins!";
+			} else if(_playerId.ToString() == "GP2")
+			{
+				_winnerText.text = "Player 2 Wins!";
+			}
+		}
 
 	}
 

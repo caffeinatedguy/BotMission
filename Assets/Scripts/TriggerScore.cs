@@ -7,6 +7,7 @@ public class TriggerScore : MonoBehaviour
 
 	public PlayerId _playerID;
 	public int _amount;
+	public bool _winOnEnter;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,6 +15,11 @@ public class TriggerScore : MonoBehaviour
 
 		if(other.tag == "Ball"){
 			SDD.Events.EventManager.Instance.Raise(new ScoreEvent(_playerID, _amount));
+		}
+
+		if(_winOnEnter && other.tag == "Player")
+		{
+			
 		}
 
 		StartCoroutine(PoolObjectAfterTime(other.gameObject, 1.0f));

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ActionQueue : MonoBehaviour {
+public class ActionQueue : Events.EventHandler {
 
 
 	private List<GameObject> _queue = new List<GameObject>();
@@ -74,7 +74,7 @@ public class ActionQueue : MonoBehaviour {
 		if ((_playerId != e._playerId) || _queue.Count >= _maxQueueSize)
 			return;
 
-		Debug.Log(string.Format("HeaderText.OnClick({0})", e));
+		//Debug.Log(string.Format("HeaderText.OnClick({0})", e));
 
 		switch (e._eventType)
 		{
@@ -91,6 +91,40 @@ public class ActionQueue : MonoBehaviour {
 				AddToQueue((GameObject)GameObject.Instantiate(_rotateRightAction));
 				break;
 			case TileMoverEventTypes.Push:
+				GameObject tempPush = (GameObject)GameObject.Instantiate(_pushAction);
+				tempPush.GetComponent<PushAction>().Direction = e._direction;
+				AddToQueueFront(tempPush);
+				break;
+		}
+
+	}
+
+	public override void SubscribeEvents()
+	{
+		//Debug.Log(string.Format("HeaderText.SubscribeEvents() name {0}", name));
+
+		SDD.Events.EventManager.Instance.AddListener<TileMoverEvent>(OnTileMoverEvent);
+	}
+
+	public override void UnsubscribeEvents()
+	{
+		//Debug.Log(string.Format("HeaderText.UnsubscribeEvents() name {0}", name));
+
+		SDD.Events.EventManager.Instance.RemoveListener<TileMoverEvent>(OnTileMoverEvent);
+	}
+
+	public void OnTileMoverEvent(TileMoverEvent e)
+	{
+		//Check if this player is the right player otherwise return
+		if ((_playerId != e._playerId) || _queue.Count >= _maxQueueSize)
+			return;
+
+		//Debug.Log(string.Format("HeaderText.OnClick({0})", e));
+
+		switch (e._eventType)
+		{
+			
+				case TileMoverEventTypes.Push:
 				GameObject tempPush = (GameObject)GameObject.Instantiate(_pushAction);
 				tempPush.GetComponent<PushAction>().Direction = e._direction;
 				AddToQueueFront(tempPush);

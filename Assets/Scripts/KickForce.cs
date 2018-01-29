@@ -18,10 +18,16 @@ public class KickForce : MonoBehaviour {
 
 	private bool _canKick = true;
 
+	public AudioClip _kickSound;
+
+	private AudioSource _audioSource;
+
 	void OnCollisionEnter(Collision collision)	{
 		if(collision.collider.tag == "Ball" && _canKick)
 		{
 			_canKick = false;
+			_audioSource.pitch = Random.Range(0.75f, 1.25f);
+			_audioSource.PlayOneShot(_kickSound);
 			collision.collider.gameObject.GetComponent<Rigidbody>().AddForce((Quaternion.AngleAxis(_kickXAngle, Vector3.right) * _heading.normalized) * _kickForce);
 			StartCoroutine(EnableKickAfterTime(_kickCooldown));
 		}
@@ -30,6 +36,7 @@ public class KickForce : MonoBehaviour {
 	void Start()
 	{
 		_oldPos = transform.position;
+		_audioSource = GetComponent<AudioSource>();
 	}
 
 	void Update()

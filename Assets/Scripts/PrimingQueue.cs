@@ -15,7 +15,7 @@ public class PrimingQueue : Events.EventHandler {
 	public Transform contentPanel;
 
     [SerializeField]
-    private float _waitToActionQueue = 2.0f;
+    private float _waitToActionQueue = 1.5f;
     [SerializeField]
     private ActionQueue _actionQueue;
     [SerializeField]
@@ -29,7 +29,7 @@ public class PrimingQueue : Events.EventHandler {
 	[SerializeField]
 	private GameObject _pushAction;
 
-	private int _maxQueueSize = 6;
+	private int _maxQueueSize = 7;
 
 	[SerializeField]
 	private PlayerId _playerId;
@@ -84,14 +84,14 @@ public class PrimingQueue : Events.EventHandler {
 
 	public override void SubscribeEvents()
 	{
-		Debug.Log(string.Format("HeaderText.SubscribeEvents() name {0}", name));
+		//Debug.Log(string.Format("HeaderText.SubscribeEvents() name {0}", name));
 
 		SDD.Events.EventManager.Instance.AddListener<TileMoverEvent>(OnTileMoverEvent);
 	}
 
 	public override void UnsubscribeEvents()
 	{
-		Debug.Log(string.Format("HeaderText.UnsubscribeEvents() name {0}", name));
+		//Debug.Log(string.Format("HeaderText.UnsubscribeEvents() name {0}", name));
 
 		SDD.Events.EventManager.Instance.RemoveListener<TileMoverEvent>(OnTileMoverEvent);
 	}
@@ -102,7 +102,7 @@ public class PrimingQueue : Events.EventHandler {
 		if ((_playerId != e._playerId) || _queue.Count >= _maxQueueSize)
 			return;
 
-		Debug.Log(string.Format("HeaderText.OnClick({0})", e));
+		//Debug.Log(string.Format("HeaderText.OnClick({0})", e));
 
 		switch (e._eventType)
 		{
@@ -118,11 +118,11 @@ public class PrimingQueue : Events.EventHandler {
 			case TileMoverEventTypes.TurnRight:
 				AddToQueue((GameObject)GameObject.Instantiate(_rotateRightAction), e);
 				break;
-			case TileMoverEventTypes.Push:
+			/*case TileMoverEventTypes.Push:
 				GameObject tempPush = (GameObject)GameObject.Instantiate(_pushAction);
 				tempPush.GetComponent<PushAction>().Direction = e._direction;
 				AddToQueueFront(tempPush, e);
-				break;
+				break;*/
 		}
 
 	}
